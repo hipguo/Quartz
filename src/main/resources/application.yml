@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: chenguo56
+    url: jdbc:mysql://127.0.0.1:3306/quartz-db?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never  #always启动时清空重新记录，never保留数据
